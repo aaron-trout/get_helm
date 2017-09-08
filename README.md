@@ -2,8 +2,8 @@
 Python script for installing kubernetes helm.
 
 The script calls the Github API to find the latest release of helm, downloads
-the `.tar.gz` archive from Google Cloud storage, and extracts the helm
-binary into the location specified.
+the `.tar.gz` archive from Google Cloud storage, extracts the helm binary
+into the location specified and makes it executable by the current user.
 
 # Requirements / limitations
 
