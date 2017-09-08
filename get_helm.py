@@ -31,7 +31,7 @@ def extract_file(archive, source, destination):
 
 
 if __name__ == '__main__':
-    assert len(sys.argv) == 2, 'Usage: python get_helm.py /path/to/dest'
+    assert len(sys.argv) == 2, 'Usage: python3 get_helm.py /path/to/dest'
     latest_release = github_get_latest_release(
         'kubernetes', 'helm')['tag_name']
     print(f'Latest version is {latest_release!r}')
